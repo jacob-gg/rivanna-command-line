@@ -7,7 +7,8 @@ Last updated: 2022-09-23
 **Log in**  
 `ssh -Y <usr>@rivanna.hpc.virginia.edu`
 
-################# Transfer files #################  
+---
+**Transfer files**  
 _Run SCP from the local (not in SSH)._  
 Directory info:
 - SCP takes the directory it's invoked in as the default path
@@ -25,7 +26,8 @@ _Remote to local:_
 
 _sftp and rsync are additional options for file transfer. [Info](https://www.rc.virginia.edu/userinfo/rivanna/logintools/cl-data-transfer/#file-transfer-from-local-to-remote)._
 
-################# Slurm script #################  
+---
+**Slurm script**  
 Rivanna receives and manages jobs based on Slurm scripts.  
 Write the Slurm script in bash, and save it as a `.slurm`.<br>
 _Note: I recommend using a text editor other than TextEdit (e.g., Atom) on Mac, as TextEdit seems to have trouble saving files as `.slurm` without coercing to `.rtf`._
@@ -55,10 +57,12 @@ Key options:
 `-p`, `--partition`: partition (standard, dev)
 `-o`, `--output`: output file (optional; default name will be used otherwise)
 
-################# Execute script #################  
+---
+**Execute script on Rivanna**  
 `sbatch slurmscript.slurm`
 
-################# Ad hoc Rivanna CL commands #################  
+---
+**Ad hoc Rivanna CL commands**  
 `allocations -a <alloc>` # view allocation details  
 `squeue --user <usr>` # view user's current jobs  
 `jobq` # info on your current jobs  
@@ -67,7 +71,8 @@ Key options:
 `sfsq` # info on your scratch (temporary) storage  
 `scancel <jobid>` # cancel a job  
 
-################# Ad hoc R-in-Rivana CL commands #################  
+---
+**Ad hoc R-in-Rivanna CL commands**  
 `module purge` # clear modules  
 `module load goolf/7.1.0_3.1.4 R/4.0.3` # load R 4.0.3  
 `module spider R` # see available R versions  
