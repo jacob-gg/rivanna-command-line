@@ -1,4 +1,4 @@
-### Rivanna From the Command Line
+### Rivanna from the command line
 _A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/)_  
 Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
 Last updated: 2022-09-23  
