@@ -1,15 +1,18 @@
-#### Rivanna From the Command Line
+### Rivanna From the Command Line
 _A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/)_  
-[Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
+Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
 Last updated: 2022-09-23  
 
 ---
-**Log in**  
+**Log in with SSH**  
+
 `ssh -Y <usr>@rivanna.hpc.virginia.edu`
 
 ---
 **Transfer files**  
+
 _Run SCP from the local (not in SSH)._  
+
 Directory info:
 - SCP takes the directory it's invoked in as the default path
   - `cd` to relevant directory to make life easy
@@ -28,8 +31,9 @@ _sftp and rsync are additional options for file transfer. [Info](https://www.rc.
 
 ---
 **Slurm script**  
-Rivanna receives and manages jobs based on Slurm scripts.  
-Write the Slurm script in bash, and save it as a `.slurm`.<br>
+
+Rivanna receives and manages jobs based on Slurm scripts. Write the Slurm script in bash, and save it as a `.slurm`.
+
 _Note: I recommend using a text editor other than TextEdit (e.g., Atom) on Mac, as TextEdit seems to have trouble saving files as `.slurm` without coercing to `.rtf`._
 
 Sample Slurm script to execute a serial (single-core) R script on Rivanna:
@@ -54,15 +58,17 @@ Key options:
 `-N`, `--nodes`: nodes  
 `-n`, `--ntasks`: tasks  
 `-M`, `--mem`: RAM in mb  
-`-p`, `--partition`: partition (standard, dev)
+`-p`, `--partition`: partition (standard, dev)  
 `-o`, `--output`: output file (optional; default name will be used otherwise)
 
 ---
 **Execute script on Rivanna**  
+
 `sbatch slurmscript.slurm`
 
 ---
 **Ad hoc Rivanna CL commands**  
+
 `allocations -a <alloc>` # view allocation details  
 `squeue --user <usr>` # view user's current jobs  
 `jobq` # info on your current jobs  
@@ -73,8 +79,11 @@ Key options:
 
 ---
 **Ad hoc R-in-Rivanna CL commands**  
+
 `module purge` # clear modules  
 `module load goolf/7.1.0_3.1.4 R/4.0.3` # load R 4.0.3  
 `module spider R` # see available R versions  
-_Canary: R 4.1.1 on Rivanna seems to have package-handling issues._  
+
 Once R is loaded in the CL, install packages as usual (`install.packages()`); a prompt will open to select a mirror to download from (e.g., Germany Leipzig).
+
+_Canary: R 4.1.1 on Rivanna seems to have package-handling issues._
