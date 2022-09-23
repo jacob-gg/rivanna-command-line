@@ -11,13 +11,9 @@ Last updated: 2022-09-23
 ---
 **Transfer files**  
 
-_Run SCP from the local (not in SSH)._  
+_Note: This section will be updated with SFTP/rsync transfer instructions._
 
-Directory info:
-- SCP takes the directory it's invoked in as the default path
-  - `cd` to relevant directory to make life easy
-- Default remote path is `home/<usr>/`
-  - `mkdir` in SSH to create remote directory if needed
+_Run SCP from the local (not in SSH)._  
 
 _Local to remote:_  
 `scp localfile <usr>@rivanna.hpc.virginia.edu:/path/file`  
@@ -27,7 +23,11 @@ _Remote to local:_
 `scp <usr>@rivanna.hpc.virginia.edu:/path/file /targetfile`  
 `scp -r <usr>@rivanna.hpc.virginia.edu:/path/dir /targetdir`
 
-_sftp and rsync are additional options for file transfer. [Info](https://www.rc.virginia.edu/userinfo/rivanna/logintools/cl-data-transfer/#file-transfer-from-local-to-remote)._
+Directory info:
+- SCP takes the directory it's invoked in as the default path
+  - `cd` to relevant directory to make life easy
+- Default remote path is `home/<usr>/`
+  - `mkdir` in SSH to create remote directory if needed
 
 ---
 **Slurm script**  
