@@ -3,7 +3,8 @@ _A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/)_
 [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
 Last updated: 2022-09-23  
 
-################# Log in #################  
+---
+**Log in**  
 `ssh -Y <usr>@rivanna.hpc.virginia.edu`
 
 ################# Transfer files #################  
