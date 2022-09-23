@@ -32,7 +32,7 @@ Directory info:
 ---
 **Slurm script**  
 
-Rivanna receives and manages jobs based on Slurm scripts. Write the Slurm script in bash, and save it as a `.slurm`.
+Rivanna receives and manages jobs based on Slurm scripts. Write the script in bash, and save it as a `.slurm`.
 
 _Note: I recommend using a text editor other than TextEdit (e.g., Atom) on Mac, as TextEdit seems to have trouble saving files as `.slurm` without coercing to `.rtf`._
 
