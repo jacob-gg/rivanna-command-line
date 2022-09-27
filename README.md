@@ -12,12 +12,12 @@ Last updated: 2022-09-27
 - [Ad hoc commands for using R in Rivanna](#ad-hoc-r-in-rivanna-cl-commands)  
 
 ---
-**Log in with SSH**  
+##### Log in with SSH
 
 `ssh -Y <usr>@rivanna.hpc.virginia.edu`
 
 ---
-**Transfer files**  
+##### Transfer files
 
 _Note: This section will be updated with SFTP/rsync transfer instructions._
 
@@ -38,7 +38,7 @@ Directory info:
   - `mkdir` in SSH to create remote directory if needed
 
 ---
-**Slurm script**  
+##### Slurm scripts
 
 Rivanna receives and manages jobs based on Slurm scripts. Write the script in bash, and save it as a `.slurm`.
 
@@ -70,12 +70,12 @@ Key options:
 `-o`, `--output`: output file (optional; default name will be used otherwise)
 
 ---
-**Execute script on Rivanna**  
+##### Execute script on Rivanna
 
 `sbatch slurmscript.slurm`
 
 ---
-**Ad hoc Rivanna CL commands**  
+##### Ad hoc Rivanna CL commands
 
 `allocations -a <alloc>`: view allocation details  
 `squeue --user <usr>`: view user's current jobs  
@@ -86,7 +86,7 @@ Key options:
 `scancel <jobid>`: cancel a job  
 
 ---
-**Ad hoc R-in-Rivanna CL commands**  
+##### Ad hoc R-in-Rivanna CL commands
 
 `module purge` # clear modules  
 `module load goolf/7.1.0_3.1.4 R/4.0.3` # load R 4.0.3  
