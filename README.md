@@ -16,6 +16,8 @@ Last updated: 2022-09-27
 
 `ssh -Y <usr>@rivanna.hpc.virginia.edu`
 
+You'll be prompted for your password. As you type, nothing will appear; this is a normal security precaution.
+
 ---
 #### Transferring files
 
@@ -24,18 +26,14 @@ _Note: This section will be updated with SFTP/rsync transfer instructions._
 _Run SCP from the local (not in SSH)._  
 
 _Local to remote:_  
-`scp localfile <usr>@rivanna.hpc.virginia.edu:/path/file`  
-`scp -r localdir <usr>@rivanna.hpc.virginia.edu:/path/dir`
+- File: `scp localfile <usr>@rivanna.hpc.virginia.edu:/path/file`  
+- Directory: `scp -r localdir <usr>@rivanna.hpc.virginia.edu:/path/dir`
 
 _Remote to local:_  
-`scp <usr>@rivanna.hpc.virginia.edu:/path/file /targetfile`  
-`scp -r <usr>@rivanna.hpc.virginia.edu:/path/dir /targetdir`
+- File: `scp <usr>@rivanna.hpc.virginia.edu:/path/file /targetfile`  
+- Directory: `scp -r <usr>@rivanna.hpc.virginia.edu:/path/dir /targetdir`
 
-Directory info:
-- SCP takes the directory it's invoked in as the default path
-  - `cd` to relevant directory to make life easy
-- Default remote path is `home/<usr>/`
-  - `mkdir` in SSH to create remote directory if needed
+SCP takes the directory it's invoked in as the default path. `cd` to the relevant local directory in advance (not in SSH) to make life easy. The default remote path is `home/<usr>/` (`mkdir` in SSH to create a new remote directory if needed).
 
 ---
 #### Preparing Slurm scripts
