@@ -1,7 +1,15 @@
 ### Rivanna from the command line
 _A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/)_  
 Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
-Last updated: 2022-09-23  
+Last updated: 2022-09-27  
+
+#### Contents
+- [Logging in](#log-in-with-ssh)  
+- [Transferring files](#transfer-files)  
+- [Preparing a Slurm script to run a job](#slurm-script)  
+- [Executing a script o Rivanna](#execute-script-on-rivanna)  
+- [Ad hoc Rivanna commands](#ad-hoc-rivanna-cl-commands)  
+- [Ad hoc commands for using R in Rivanna](#ad-hoc-r-in-rivanna-cl-commands)  
 
 ---
 **Log in with SSH**  
@@ -69,13 +77,13 @@ Key options:
 ---
 **Ad hoc Rivanna CL commands**  
 
-`allocations -a <alloc>` # view allocation details  
-`squeue --user <usr>` # view user's current jobs  
-`jobq` # info on your current jobs  
-`qlist` # info on available queues/partitions  
-`qlimits` # info on queue/partition limits  
-`sfsq` # info on your scratch (temporary) storage  
-`scancel <jobid>` # cancel a job  
+`allocations -a <alloc>`: view allocation details  
+`squeue --user <usr>`: view user's current jobs  
+`jobq`: info on your current jobs  
+`qlist`: info on available queues/partitions  
+`qlimits`: info on queue/partition limits  
+`sfsq`: info on your scratch (temporary) storage  
+`scancel <jobid>`: cancel a job  
 
 ---
 **Ad hoc R-in-Rivanna CL commands**  
@@ -84,6 +92,6 @@ Key options:
 `module load goolf/7.1.0_3.1.4 R/4.0.3` # load R 4.0.3  
 `module spider R` # see available R versions  
 
-Once R is loaded in the CL, install packages as usual (`install.packages()`); a prompt will open to select a mirror to download from (e.g., Germany Leipzig).
+Once R is loaded in the CL, install packages as usual (`install.packages('<pkgname>')`); a prompt will open to select a mirror to download from (e.g., Germany Leipzig).
 
 _Canary: R 4.1.1 on Rivanna seems to have package-handling issues._
