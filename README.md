@@ -16,7 +16,7 @@ Last updated: 2022-09-27
 
 `ssh -Y <usr>@rivanna.hpc.virginia.edu`
 
-You'll be prompted for your password. As you type, nothing will appear; this is a normal security precaution.
+You'll be prompted for your NetBadge password. As you type, nothing will appear; this is a normal security precaution.
 
 ---
 #### Transferring files
