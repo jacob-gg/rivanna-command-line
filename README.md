@@ -86,9 +86,9 @@ Key options:
 ---
 #### Ad hoc CL commands for accessing R in Rivanna
 
-`module purge` # clear modules  
-`module load goolf/7.1.0_3.1.4 R/4.0.3` # load R 4.0.3  
-`module spider R` # see available R versions  
+`module purge`: clear modules  
+`module load goolf/7.1.0_3.1.4 R/4.0.3`: load R 4.0.3  
+`module spider R`: see available R versions  
 
 Once R is loaded in the CL, install packages as usual (`install.packages('<pkgname>')`); a prompt will open to select a mirror to download from (e.g., Germany Leipzig).
 
