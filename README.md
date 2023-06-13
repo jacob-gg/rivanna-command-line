@@ -1,7 +1,7 @@
 ### Rivanna from the command line
-_A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/)_  
+_A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/) ([on GitHub](https://github.com/uvastatlab))_  
 Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
-Last updated: 2022-09-27  
+Last updated: 2023-06-13  
 
 #### Contents
 - [Logging in with SSH](#logging-in-with-ssh)  
