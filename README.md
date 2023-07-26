@@ -1,6 +1,6 @@
 ### [Rivanna](https://www.rc.virginia.edu/userinfo/rivanna/overview/) from the command line
-_A guide for [StatLab](https://data.library.virginia.edu/statlab/) ([on GitHub](https://github.com/uvastatlab))_  
-Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
+A guide for [StatLab](https://data.library.virginia.edu/statlab/) ([on GitHub](https://github.com/uvastatlab))<br>
+Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)<br>
 Last updated: 2023-07-26
 
 #### Contents
