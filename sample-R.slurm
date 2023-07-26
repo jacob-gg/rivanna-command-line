@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -A <alloc-name>
-#SBATCH --time=0-04:00:00
+#SBATCH --time=0-00:59:00
 #SBATCH -N 1
 #SBATCH --mem 64000
 #SBATCH -p standard
