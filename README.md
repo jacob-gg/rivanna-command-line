@@ -98,7 +98,7 @@ _Remote to local:_
 - File: `rsync <usr>@rivanna.hpc.virginia.edu:remote/file target/dir`
 - Directory: `rsync -r <usr>@rivanna.hpc.virginia.edu:remote/dir target/dir`
 
-Some key options (see more [here](https://download.samba.org/pub/rsync/rsync.1):
+Some key rsync options (see more [here](https://download.samba.org/pub/rsync/rsync.1)):
 - `-r`: copy recursively, so directories within a directory are copied also
 - `-a`: "archive mode" (keep symbolic links, timestamps, ownership info, special files, and more)
 - `-P`: add a progress bar
