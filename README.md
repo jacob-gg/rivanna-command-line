@@ -5,7 +5,7 @@ Last updated: 2023-07-26
 
 #### Contents
 - [Logging in with SSH](#logging-in-with-ssh)  
-- [Modules (software/languages) on Rivanna](#modules-%28software-and-languages%29-on-rivanna)
+- [Modules on Rivanna](#modules-on-rivanna)
 - [Preparing and executing Slurm scripts](#preparing-and-executing-slurm-scripts)  
 - [Transferring files to and from Rivanna](#transferring-files-to-and-from-rivanna)  
 - [Miscellaneous Rivanna commands](#miscellaneous-rivanna-commands)  
@@ -18,7 +18,7 @@ Last updated: 2023-07-26
 If you're not accessing Rivanna on UVA WiFi, you'll need to use a VPN (UVA More Secure Network or UVA Anywhere VPN). You'll be prompted for your NetBadge password. As you type, nothing will appear; this is a normal security precaution.
 
 ---
-#### Modules (software and languages) on Rivanna
+#### Modules on Rivanna
 
 Software and compilers/interpreters for programming languages are available on Rivanna in the form of modules.
 
