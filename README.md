@@ -5,7 +5,7 @@ Last updated: 2023-07-26
 
 #### Contents
 - [Logging in with SSH](#logging-in-with-ssh)  
-- [Modules (software/languages) on Rivanna](#Modules-%28software-and-languages%29-on-Rivanna)
+- [Modules (software/languages) on Rivanna](#modules-%28software-and-languages%29-on-rivanna)
 - [Preparing and executing Slurm scripts](#preparing-and-executing-slurm-scripts)  
 - [Transferring files to and from Rivanna](#transferring-files-to-and-from-rivanna)  
 - [Miscellaneous Rivanna commands](#miscellaneous-rivanna-commands)  
