@@ -1,5 +1,5 @@
 ### [Rivanna](https://www.rc.virginia.edu/userinfo/rivanna/overview/) from the command line
-_A Mac-targeted guide for [StatLab](https://data.library.virginia.edu/statlab/) ([on GitHub](https://github.com/uvastatlab))_  
+_A guide for [StatLab](https://data.library.virginia.edu/statlab/) ([on GitHub](https://github.com/uvastatlab))_  
 Author: [Jacob Goldstein-Greenwood](https://github.com/jacob-gg)  
 Last updated: 2023-07-26
 
@@ -28,11 +28,11 @@ Software and compilers/interpreters for programming languages are available on R
 To make use of a module (e.g., R), you must load it _and any modules on which it depends_. This loading process is usually done via commands written in _Slurm scripts_ (described in the next section), which control jobs run on Rivanna.
 
 - See available versions of a module: `module spider <mod>`
-- See dependency modules for a given module: `module spider <mod>/<ver>`
+- See dependency modules for a given module version: `module spider <mod>/<ver>`
 
 For example, as of 2023-07-26, running `module spider R` indicates that R versions from 3.5.3 to 4.2.1 are available on Rivanna. Running `module spider R/4.2.1` indicates that using the R/4.2.1 module requires also loading the gcc/9.2.0 and openmpi/3.1.6 modules.
 
-- Load a module(s) with: `module load <mod>/<ver> <mod>/<ver>`
+- Load a module(s) with: `module load <mod>/<ver>`
 - See all currently loaded modules: `module list`
 - Clear all loaded modules: `module purge`
 
@@ -88,7 +88,7 @@ Once the Slurm script is prepared, submit the job with:
 
 **rsync** (recommended)
 
-`rsync <opts> <from> <to>`
+`rsync <options> <from> <to>`
 
 _Local to remote:_
 - File: `rsync local/file <usr>@rivanna.hpc.virginia.edu:target/dir`
