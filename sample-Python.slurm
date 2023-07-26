@@ -3,7 +3,7 @@
 #SBATCH --time=0-00:59:00
 #SBATCH -N 1
 #SBATCH --mem 64000
-#SBATCH -p dev
+#SBATCH -p standard
 #SBATCH -o output.out
 
 module purge
