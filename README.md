@@ -22,8 +22,10 @@ If you're not accessing Rivanna on UVA WiFi, you'll need to use a VPN (UVA More 
 
 Software and compilers/interpreters for programming languages are available on Rivanna in the form of modules.
 
-- See all available software: `module avail`
+- See available software: `module spider` or `module avail`
+  - `module spider` provides an exhaustive list; `module avail` may not (see [here](https://lmod.readthedocs.io/en/latest/135_module_spider.html))
 - See just available languages: `module key lang`
+- Search modules using regular expressions: `module -r spider <regex>`
 
 To make use of a module (e.g., R), you must load it _and any modules on which it depends_. This loading process is usually done via commands written in _Slurm scripts_ (described in the next section), which control jobs run on Rivanna.
 
